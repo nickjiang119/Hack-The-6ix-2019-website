@@ -1,0 +1,67 @@
+{
+  "name": "ht6",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run lint && vue-cli-service build",
+    "test": "npm run lint -- --no-fix",
+    "start": "vue-cli-service serve",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@hackthe6ix/vue-ui": "^0.2.15",
+    "@sentry/browser": "^5.20.1",
+    "@sentry/integrations": "^5.20.1",
+    "circular-json": "^0.5.9",
+    "portal-vue": "^2.1.7",
+    "sass": "^1.26.10",
+    "sass-loader": "^7.3.1",
+    "vue": "^2.6.11",
+    "vue-awesome": "^4.1.0",
+    "vue-qrcode-reader": "^2.3.10",
+    "vue-router": "^3.3.4"
+  },
+  "devDependencies": {
+    "@fortawesome/vue-fontawesome": "^0.1.10",
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "@vue/eslint-config-prettier": "^5.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^5.2.3",
+    "prettier": "1.18.2",
+    "vue-svg-loader": "^0.12.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "plugin:prettier/recommended",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
