@@ -1,0 +1,31 @@
+@use '~@hackthe6ix/vue-ui/styles/colors';
+@use '~@hackthe6ix/vue-ui/styles/fonts';
+
+:global {
+  @include fonts.load('~@hackthe6ix/vue-ui/static/');
+  @include colors.load;
+}
+
+
+@import './mixins';
+@import './variables';
+@import './font';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $TEXT;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $FONT;
+  font-size: 0.95rem;
+  @include scroll;
+}
+
+a {
+  @include transition(color);
+  color: map-get($PRIMARY, TEAL);
+  &:hover {
+    color: darken($PRIMARY, TEAL);
+  }
+}
